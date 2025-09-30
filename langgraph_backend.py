@@ -19,7 +19,8 @@ api_key = os.getenv("OPENAI_API_KEY")
 #     raise ValueError("OPENAI_API_KEY not found in .env file")
 
 # Initialize LLM with API key
-llm = ChatOpenAI(openai_api_key=api_key)
+# llm = ChatOpenAI(openai_api_key=api_key)
+llm = ChatOpenAI(model='gpt-4o',api_key=api_key)
 
 
 class ChatState(TypedDict):
