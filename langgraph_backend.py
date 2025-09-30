@@ -15,8 +15,8 @@ api_key = os.getenv("OPENAI_API_KEY")
 # print(api_key)
 
 # Check if API key exists
-if not api_key:
-    raise ValueError("OPENAI_API_KEY not found in .env file")
+# if not api_key:
+#     raise ValueError("OPENAI_API_KEY not found in .env file")
 
 # Initialize LLM with API key
 llm = ChatOpenAI(openai_api_key=api_key)
