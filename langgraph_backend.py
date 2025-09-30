@@ -20,7 +20,9 @@ api_key = os.getenv("OPENAI_API_KEY")
 
 # Initialize LLM with API key
 # llm = ChatOpenAI(openai_api_key=api_key)
-llm = ChatOpenAI(model='gpt-4o',api_key=api_key)
+# llm = ChatOpenAI(model='gpt-4o',api_key=api_key)
+llm = ChatOpenAI(model='gpt-4o', openai_api_key=api_key)
+
 
 
 class ChatState(TypedDict):
